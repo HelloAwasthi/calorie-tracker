@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calorie Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Calorie Calculator</h1>
-        <p>Enter your details below:</p>
-        
-        <div class="input-group">
-            <label>Weight (kg):</label>
-            <input type="number" id="weight" placeholder="e.g. 70">
-        </div>
+      <h1>Calorie Calculator</h1>
+      <p>Enter your details to calculate your BMR.</p>
 
-        <div class="input-group">
-            <label>Height (cm):</label>
-            <input type="number" id="height" placeholder="e.g. 175">
-        </div>
+      <div class="input-group">
+        <label>Gender</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
 
-        <div class="input-group">
-            <label>Age:</label>
-            <input type="number" id="age" placeholder="e.g. 21">
-        </div>
+      <div class="input-group">
+        <label>Weight (kg)</label>
+        <input type="number" id="weight" placeholder="e.g. 70" />
+      </div>
 
-        <button onclick="calculateCalories()" class="btn action-btn">Calculate</button>
+      <div class="input-group">
+        <label>Height (cm)</label>
+        <input type="number" id="height" placeholder="e.g. 175" />
+      </div>
 
-        <div id="result"></div>
+      <div class="input-group">
+        <label>Age</label>
+        <input type="number" id="age" placeholder="e.g. 21" />
+      </div>
 
-        <br><br>
-        <a href="index.html">Back to Home</a>
+      <button onclick="calculateCalories()" class="btn">Calculate</button>
+
+      <div id="result">Your results will appear here</div>
+
+      <div style="margin-top: 25px">
+        <a href="index.html" class="back-link">← Back to Home</a>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

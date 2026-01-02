@@ -1,53 +1,148 @@
+/* Importing a modern font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Light grey background */
-    text-align: center;
-    padding: 50px;
+  font-family: "Poppins", sans-serif;
+  /* BACKGROUND IMAGE: Change the URL inside the url('') below */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=2053");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .container {
-    background-color: white;
-    width: 50%;
-    margin: 0 auto; /* Centers the box */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+  backdrop-filter: blur(12px); /* Blurred glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 20px;
 }
 
 h1 {
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #e0e0e0;
 }
 
 .input-group {
-    margin: 15px 0;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-input {
-    padding: 10px;
-    width: 60%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #f0f0f0;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 1rem;
+  outline: none;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745; /* Green color */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    margin: 10px;
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #218838; /* Darker green on hover */
+  background: #2ecc71;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(39, 174, 96, 0.4);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 15px;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #007bff; /* Blue text */
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.back-link {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.back-link:hover {
+  color: white;
+}
+
+/* Tips Grid Layout */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.tip-card h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #2ecc71;
+}
+
+.tip-card p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
 }
